@@ -28,10 +28,11 @@ body{
     padding-left: 20px;
 }
 
-p.signature{
+p.signature {
     font-family: "Snell Roundhand", cursive;
     font-size: 50px;
-    font-weight:
+    font-weight: bolder;
+}
 
 p.modified-logo{
     color: black;
@@ -42,7 +43,7 @@ p.modified-logo{
 }
 
 p.signature,
-p.signature + p.ModifiedLogo {
+p.signature + p.modified-logo {
     margin-top: 0;
     margin-bottom: 0;
 }
