@@ -1,0 +1,32 @@
+.div-container{
+    background-image: url("../images/change.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 630px;
+}
+
+.div-container main{
+    display: flex;
+}
+
+.div-container main article{
+    padding: 30px;
+}
+
+.div-container main article h1{
+    color: black;
+    font-weight: bolder;
+    font-size: 50px;
+    text-align: justify;
+}
+
+.div-container main article p{
+    color: black;
+    font-size: 30px;
+    text-align: justify;
+}
+
+.div-container main aside{
+    padding-right: 30px;
+    padding-top: 60px;
+}

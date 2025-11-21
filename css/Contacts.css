@@ -1,0 +1,48 @@
+body{
+    padding-top: 95px;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    background-image: url("../images/change.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 600px;
+}
+
+.contact-container h1{
+    color: black;
+    font-weight: bolder;
+    font-size: 50px;
+    text-align: justify;
+    padding-left: 20px;
+}
+
+.contact-container p{
+    color: black;
+    font-size: 30px;
+    text-align: justify;
+    padding-left: 20px;
+}
+
+p.signature{
+    font-family: "Snell Roundhand", cursive;
+    font-size: 50px;
+    font-weight:
+
+p.modified-logo{
+    color: black;
+    font-weight: bolder;
+    font-size: 50px;
+    font-family: "Big Caslon";
+    padding-bottom: 2px;
+}
+
+p.signature,
+p.signature + p.ModifiedLogo {
+    margin-top: 0;
+    margin-bottom: 0;
+}

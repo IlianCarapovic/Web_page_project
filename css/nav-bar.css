@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding-top: 95px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(30,30,30);
+    padding: 10px 20px;
+    height: 95px;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.navbar.scrolled {
+    background-color: rgb(30,30,30);
+}
+
+.logo {
+    color: white;
+    font-weight: bolder;
+    font-size: 50px;
+    font-family: "Big Caslon";
+    padding-bottom: 2px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    padding: 40px 40px;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: red;
+    border-bottom: 3px solid red;
+    height: auto;
+}
+
+.nav-links a:hover,
+.nav-links a.active{
+    background-color: rgba(255, 255, 255, 0.2);
+    color: red;
+    border-bottom: 3px solid red;
+}
