@@ -1,0 +1,29 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 95px; /* keep your navbar spacing */
+}
+
+.page-layout{
+    background-image: url("../images/change.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);   /* ALWAYS 3 per row */
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-card {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+}

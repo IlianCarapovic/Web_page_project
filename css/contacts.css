@@ -1,10 +1,21 @@
-body{
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
     padding-top: 95px;
 }
 
 .contact-container {
+    padding-top: 40px;
+    padding-bottom: 50px;
+    padding-left: 19px;
+    flex: 1;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
     margin: 0;
     background-image: url("../images/change.jpeg");
@@ -13,19 +24,24 @@ body{
     min-height: 600px;
 }
 
+.contact-container aside{
+
+}
+
 .contact-container h1{
     color: black;
     font-weight: bolder;
     font-size: 50px;
     text-align: justify;
-    padding-left: 20px;
+    padding-left: 30px;
 }
 
 .contact-container p{
     color: black;
     font-size: 30px;
     text-align: justify;
-    padding-left: 20px;
+    padding-left: 30px;
+    padding-right: 200px;
 }
 
 p.signature {
