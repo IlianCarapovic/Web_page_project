@@ -21,13 +21,47 @@
         <li></li>
     </ul>
 </nav>
-<div class ="page-layout">
-    <div class="product-card">Product 1</div>
-    <div class="product-card">Product 2</div>
-    <div class="product-card">Product 3</div>
-    <div class="product-card">Product 4</div>
-    <div class="product-card">Product 5</div>
-    <div class="product-card">Product 6</div>
+<div class="page-Design">
+    <div class = "heading">
+        <h1>Your Guide to the World of Fragrance</h1>
+    </div>
+    <div class="top-bar">
+        <input type="text" id="searchInput" placeholder="Search fragrances..." class ="search">
+        <button id="addBtn" class ="add-button">+ Add New Fragrance</button>
+    </div>
+    <div class ="page-layout">
+        <div class="product-card">
+            <button class="perfume-btn"
+                    data-title="Joop Homme"
+                    data-img="../products-images/Joop-homme.avif"
+                    data-desc="A sweet, spicy, masculine fragrance with warm tones.">
+                <img src="../products-images/Joop-homme.avif" class="image">
+            </button>
+        </div>
+        <div class="product-card">
+            <button class="perfume-btn"
+                    data-title="Joop Homme"
+                    data-img="../products-images/Joop-homme.avif"
+                    data-desc="A sweet, spicy, masculine fragrance with warm tones.">
+                <img src="../products-images/Joop-homme.avif" class="image">
+            </button>
+        </div>
+        <div class="product-card">
+            <button class="perfume-btn"
+                    data-title="Joop Homme"
+                    data-img="../products-images/Joop-homme.avif"
+                    data-desc="A sweet, spicy, masculine fragrance with warm tones.">
+                <img src="../products-images/Joop-homme.avif" class="image">
+            </button>
+        </div>
+    </div>
+<div class ="modal" id = "modal">
+    <div class ="inner-modal">
+        <h2 id="modal-title"></h2>
+        <img id="modal-img" style="width:400px;">
+        <p id="modal-desc"></p>
+        <button class="add-button" id="close">Close</button>
+    </div>
 </div>
 <footer class="footer">
     <div class="footer-container">
@@ -57,5 +91,6 @@
         <p>© 2025 Ilian Čarapović. All rights reserved.</p>
     </div>
 </footer>
+<script src="../js/pop-ups.js"></script>
 </body>
 </html>
