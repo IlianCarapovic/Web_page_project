@@ -1,0 +1,68 @@
+.page-Design{
+    background-image: url("../images/products-home.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 1;
+}
+
+.add-button{
+    font-size: 25px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius:25px;
+    width: 400px;
+    height: 50px;
+}
+
+.add-button:hover{
+    color: red;
+    border: 2px solid red;
+}
+
+.heading{
+    display: flex;
+    background-image: url("../images/heding-home1.jpg");
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 30px;
+}
+
+.heading h1{
+    color: white;
+    font-family: "Snell Roundhand" ,fantasy;
+    font-weight: bolder;
+    font-size: 70px;
+    word-spacing: 10px;
+    height: 70px;
+    padding-bottom: 16px;
+}
+
+.page-layout{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px 20px 40px 20px;
+}
+
+.product-card {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.product-card img:hover{
+    box-shadow: 0px 4px 10px rgba(255, 0, 0, 1);
+}
+
+.product-card button {
+    display: inline-block;
+    padding: 0;
+    border: none;
+    background: none;
+    width: auto;
+}
+
+.product-card img {
+    width: 350px;
+    height: auto;
+}

@@ -5,12 +5,14 @@
     <title>Home</title>
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/pop-up.css">
+    <link rel="stylesheet" href="css/home-page-products.css">
 </head>
 <body>
 <div class="imageSliderDiv" id ="homeDiv1">
     <nav class="navbar" id ="navbar">
         <div class="logo" id ="logo">
-            <p>Perfumer Paradise</p>
+            <p>Perfumer's Paradise</p>
         </div>
         <ul class="nav-links">
             <li><a href="home.html">Home</a></li>
@@ -42,6 +44,106 @@
     </main>
 </div>
 
+<div class="page-Design">
+    <div class = "heading">
+        <h1>Whispers From a Perfumer’s Paradise</h1>
+    </div>
+    <div class ="page-layout">
+        <div class="product-card">
+            <button class="perfume-btn"
+                    data-title="Joop! Homme"
+                    data-img="../products-images/Joop-homme.avif"
+                    data-desc="Joop! Homme is a very sensual, oriental fragrance with fresh citrus topnotes of mandarin, lemon, bergamot and orange blossom. The floral heart is very warm and balmy, revealing jasmine, lily of the valley, heliotrope and cinnamon. The exotic base introduces sweet and woodsy notes of vanilla, Tonka bean, patchouli and sandalwood. The fragrance was created by Michel Almairac in 1989."
+                    data-sillage="Strong"
+                    data-longevity="Long-lasting"
+                    data-top="Bergamot, Orange Tree Blossom, Amalfi Lemon, Tangerine"
+                    data-middle="Jasmine, Heliotrope, Lily Of The Valley, Cardamom, Cinnamon"
+                    data-base="Patchouli, Tonka Beans, Vanilla, Sandalwood">
+                <img src="../products-images/Joop-homme.avif" class="image">
+            </button>
+        </div>
+        <div class="product-card">
+            <button class="perfume-btn"
+                    data-title="Joop! Homme Le Parfum"
+                    data-img="../products-images/joop-homme-le-parfum.avif"
+                    data-desc="JOOP! Homme Le Parfum is an oriental Fougere fragrance for men, launched in 2022, that blends aromatic lavender with a rich, carnal tonka bean accord and a precious iris heart. It opens with top notes of bergamot, cardamom, and hazelnut, while the heart features lavender and iris, and the base consists of tonka bean, sandalwood, and vanilla. This modern, sophisticated scent is described as a richer, more intense version of the original."
+                    data-sillage="Strong"
+                    data-longevity="Long-lasting"
+                    data-top="Lavander"
+                    data-middle="Iris"
+                    data-base="Vanilla, Praline, Tonka bean">
+                <img src="../products-images/joop-homme-le-parfum.avif" class="image">
+            </button>
+        </div>
+        <div class="product-card">
+            <button class="perfume-btn"
+                    data-title="Joop! Homme Eau de Parfum"
+                    data-img="../products-images/joop-eau-de-parfum.avif"
+                    data-desc="Joop! Homme Eau de Parfum by Joop! is a Oriental Vanilla fragrance for men. Joop! Homme Eau de Parfum was launched in 2021. Top notes are Hazelnut, Cinnamon and Bergamot; middle notes are Honey, Heliotrope, Orange Blossom, Cardamom and Fir; base notes are Vanilla, Tonka Bean, Sandalwood, Cashmeran, Moss and Vetiver."
+                    data-sillage="Strong"
+                    data-longevity="Long-lasting"
+                    data-top="Clary Sage, Cinnamon, Hazelnut"
+                    data-middle="Orange Blossom, Heliotrope"
+                    data-base="Tonka Beans, Vanilla, Sandalwood, Moss, Cistus, Haitian Vetiver">
+                <img src="../products-images/joop-eau-de-parfum.avif" class="image">
+            </button>
+        </div>
+        <div class="product-card">
+            <button class="perfume-btn"
+                    data-title="Joop! Homme"
+                    data-img="../products-images/Joop-homme.avif"
+                    data-desc="Joop! Homme is a very sensual, oriental fragrance with fresh citrus topnotes of mandarin, lemon, bergamot and orange blossom. The floral heart is very warm and balmy, revealing jasmine, lily of the valley, heliotrope and cinnamon. The exotic base introduces sweet and woodsy notes of vanilla, Tonka bean, patchouli and sandalwood. The fragrance was created by Michel Almairac in 1989."
+                    data-sillage="Strong"
+                    data-longevity="Long-lasting"
+                    data-top="Bergamot, Orange Tree Blossom, Amalfi Lemon, Tangerine"
+                    data-middle="Jasmine, Heliotrope, Lily Of The Valley, Cardamom, Cinnamon"
+                    data-base="Patchouli, Tonka Beans, Vanilla, Sandalwood">
+                <img src="../products-images/Joop-homme.avif" class="image">
+            </button>
+        </div>
+    </div>
+</div>
+<div class ="modal" id = "modal">
+    <div class ="inner-modal">
+        <div class="modal-left">
+            <img id="modal-img" style="width:400px;">
+        </div>
+        <div class="modal-right">
+            <h2 id="modal-title"></h2>
+            <div class="modal-rating">
+                <div class="rating-row">
+                    <label for="sillage-slider">Sillage:</label>
+                    <input type="range" id="sillage-slider" min="0" max="4" value="1">
+                    <span id="sillage-value">5</span>
+                </div>
+                <div class="rating-row">
+                    <label for="longevity-slider">Longevity:</label>
+                    <input type="range" id="longevity-slider" min="0" max="5" value="1">
+                    <span id="longevity-value">5</span>
+                </div>
+            </div>
+            <p id="modal-desc"></p>
+            <table id="modal-notes-table" class="notes-table">
+                <tr>
+                    <th>Top Notes</th>
+                    <td id="top-notes"></td>
+                </tr>
+                <tr>
+                    <th>Middle Notes</th>
+                    <td id="middle-notes"></td>
+                </tr>
+                <tr>
+                    <th>Base Notes</th>
+                    <td id="base-notes"></td>
+                </tr>
+            </table>
+            <div class="button-wrapper">
+                <button class="add-button" id="close">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <footer class="footer">
     <div class="footer-container">
         <div class="footer-contact">
@@ -71,5 +173,7 @@
     </div>
 </footer>
 <script src = "js/home-code.js"></script>
+<script src= "js/pop-ups.js"></script>
+
 </body>
 </html>

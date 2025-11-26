@@ -27,7 +27,6 @@ body {
     color: white;
     font-weight: bolder;
     font-size: 50px;
-    font-family: "Big Caslon";
     padding-bottom: 2px;
 }
 
@@ -48,6 +47,7 @@ body {
     color: white;
     font-size: 30px;
     text-decoration: none;
+    font-weight: bolder;
     padding: 40px 40px;
     align-items: center;
     height: 100%;
@@ -94,12 +94,13 @@ body {
     font-size: 70px;
     font-weight: lighter;
     padding-left: 50px;
-    padding-right: 50px;: ;
+    padding-right: 74px;
+    word-spacing: 10px;
 }
 
 .backgroundDiv3{
     min-height: 630px;
-    background-image: url("/images/change.jpeg");
+    background-image: url("../images/change.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -137,3 +138,4 @@ main article p{
 main article aside{
     padding-right: 80px;
 }
+

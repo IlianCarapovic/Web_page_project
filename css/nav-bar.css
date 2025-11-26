@@ -26,7 +26,6 @@ body {
     color: white;
     font-weight: bolder;
     font-size: 50px;
-    font-family: "Big Caslon";
     padding-bottom: 2px;
 }
 
@@ -49,6 +48,7 @@ body {
     text-decoration: none;
     padding: 40px 40px;
     align-items: center;
+    font-weight: bolder;
     height: 100%;
 }
 
