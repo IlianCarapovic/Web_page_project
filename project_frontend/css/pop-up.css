@@ -95,7 +95,6 @@ input[type="range"]::-webkit-slider-thumb {
 
 .notes-table {
     border-collapse: collapse;
-    width: max-content;
     font-size: 25px;
 }
 

@@ -12,7 +12,7 @@ app.use('/uploads', express.static('uploads'));
 
 
 app.use('/perfumes', perfumesRouter);
-app.use('/perfumes', addRouter);
+app.use('/upload', addRouter);
 
 app.listen(port, () => {
     console.log(`Server running on port ${port}`);

@@ -1,60 +1,58 @@
-const openButtons = document.querySelectorAll(".perfume-btn");
-const closeButton = document.getElementById("close");
-const modal = document.getElementById("modal");
+document.addEventListener("DOMContentLoaded", () => {
 
-const modalTitle = document.getElementById("modal-title");
-const modalImg = document.getElementById("modal-img");
-const modalDesc = document.getElementById("modal-desc");
+    const modal = document.getElementById("modal");
 
-const modalTopNotes = document.getElementById("top-notes");
-const modalMiddleNotes = document.getElementById("middle-notes");
-const modalBaseNotes = document.getElementById("base-notes");
+    const modalTitle = document.getElementById("modal-title");
+    const modalImg = document.getElementById("modal-img");
+    const modalDesc = document.getElementById("modal-desc");
 
-const sillageSlider = document.getElementById("sillage-slider");
-const sillageValue = document.getElementById("sillage-value");
+    const modalTopNotes = document.getElementById("top-notes");
+    const modalMiddleNotes = document.getElementById("middle-notes");
+    const modalBaseNotes = document.getElementById("base-notes");
 
-const longevitySlider = document.getElementById("longevity-slider");
-const longevityValue = document.getElementById("longevity-value");
+    const sillageSlider = document.getElementById("sillage-slider");
+    const sillageValue = document.getElementById("sillage-value");
 
-function updateSliderFill(slider) {
-    const value = slider.value;
-    const max = slider.max;
-    const percent = (value / max) * 100;
-    slider.style.background = `linear-gradient(to right, red ${percent}%, #ddd ${percent}%)`;
-}
+    const longevitySlider = document.getElementById("longevity-slider");
+    const longevityValue = document.getElementById("longevity-value");
 
-sillageSlider.addEventListener("input", () => {
-    sillageValue.textContent = sillageSlider.value;
-    updateSliderFill(sillageSlider);
-});
+    const closeButton = document.getElementById("close");
 
-longevitySlider.addEventListener("input", () => {
-    longevityValue.textContent = longevitySlider.value;
-    updateSliderFill(longevitySlider);
-});
+    function updateSliderFill(slider) {
+        const value = slider.value;
+        const max = slider.max;
+        const percent = (value / max) * 100;
+        slider.style.background = `linear-gradient(to right, red ${percent}%, #ddd ${percent}%)`;
+    }
 
-openButtons.forEach(button => {
-    button.addEventListener("click", () => {
-        modalTitle.textContent = button.dataset.title;
-        modalImg.src = button.dataset.img;
-        modalDesc.textContent = button.dataset.desc;
+    window.attachPopupListeners = function () {
+        const buttons = document.querySelectorAll(".perfume-btn");
 
-        modalTopNotes.textContent = button.dataset.top || "";
-        modalMiddleNotes.textContent = button.dataset.middle || "";
-        modalBaseNotes.textContent = button.dataset.base || "";
+        buttons.forEach(button => {
+            button.addEventListener("click", () => {
 
-        sillageSlider.value = button.dataset.sillage || 5;
-        sillageValue.textContent = sillageSlider.value;
-        updateSliderFill(sillageSlider);
+                modalTitle.textContent = button.dataset.title;
+                modalImg.src = button.dataset.img;
+                modalDesc.textContent = button.dataset.desc;
 
-        longevitySlider.value = button.dataset.longevity || 5;
-        longevityValue.textContent = longevitySlider.value;
-        updateSliderFill(longevitySlider);
+                modalTopNotes.textContent = button.dataset.top;
+                modalMiddleNotes.textContent = button.dataset.middle;
+                modalBaseNotes.textContent = button.dataset.base;
 
-        modal.classList.add("open");
+                sillageSlider.value = button.dataset.sillage ?? 1;
+                sillageValue.textContent = sillageSlider.value;
+                updateSliderFill(sillageSlider);
+
+                longevitySlider.value = button.dataset.longevity ?? 1;
+                longevityValue.textContent = longevitySlider.value;
+                updateSliderFill(longevitySlider);
+
+                modal.classList.add("open");
+            });
+        });
+    };
+
+    closeButton.addEventListener("click", () => {
+        modal.classList.remove("open");
     });
-});
-
-closeButton.addEventListener("click", () => {
-    modal.classList.remove("open");
 });
