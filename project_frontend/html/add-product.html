@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../css/nav-bar.css">
+    <link rel="stylesheet" href="../css/add-product.css">
+    <link rel="stylesheet" href="../css/footer.css">
     <title>Title</title>
 </head>
 <body>
@@ -18,5 +20,80 @@
     <li></li>
   </ul>
 </nav>
+<div class = "title">
+    <h1>Add a New Perfume</h1>
+</div>
+<form id="perfumeForm" action="http://localhost:3000/perfumes/add" method="POST" enctype="multipart/form-data">
+    <label>Name:</label>
+    <input type="text" name="name" required />
+
+    <label>Brand:</label>
+    <input type="text" name="brand_name" required />
+
+    <label>Sillage (1–4):</label>
+    <input type="number" name="sillage_value" min="1" max="4" required />
+
+    <label>Longevity (1–5):</label>
+    <input type="number" name="longevity_value" min="1" max="5" required />
+
+    <label>Type:</label>
+    <select name="type" required>
+        <option value="">Select perfume type</option>
+        <option value="designer">Designer</option>
+        <option value="niche">Niche</option>
+        <option value="arabian">Arabian</option>
+    </select>
+
+    <label>Top Notes:</label>
+    <textarea name="top_notes"></textarea>
+
+    <label>Middle Notes:</label>
+    <textarea name="middle_notes"></textarea>
+
+    <label>Base Notes:</label>
+    <textarea name="base_notes"></textarea>
+
+    <label>Description:</label>
+    <textarea name="description"></textarea>
+
+    <label>Image:</label>
+    <input type="file" name="image" accept="image/*" required />
+
+    <div class="button_area">
+        <a href="products.html">
+            <button class="add-button">Back</button>
+        </a>
+        <button type="submit" class = "add-button">Add Perfume</button>
+    </div>
+</form>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-contact">
+            <h3>Contact</h3>
+            <p><strong>Name:</strong> Ilian Čarapović</p>
+            <p><strong>Address:</strong> Jadranska Ulica 45, 35000 Slavonski Brod</p>
+            <p><strong>Phone:</strong> 099 570 0714</p>
+            <p><strong>Email:</strong> <a href="mailto:iliancarapovic@gmail.com">iliancarapovic@gmail.com</a></p>
+        </div>
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contacts.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-social">
+            <h3>Follow Me</h3>
+            <a href="#"><img src="../images/facebook.svg" alt="Facebook" height="100" width="100" /></a>
+            <a href="#"><img src="../images/instagram.svg" alt="Instagram" height="100" width="100"/></a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2025 Ilian Čarapović. All rights reserved.</p>
+    </div>
+</footer>
 </body>
 </html>

@@ -1,0 +1,80 @@
+body{
+    background-image: url("../images/change.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.title{
+    background-image: url("../images/background-div2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.title h1{
+    color: white;
+    font-family: "Snell Roundhand" ,fantasy;
+    font-weight: lighter;
+    font-size: 50px;
+    word-spacing: 10px;
+    height: 50px;
+}
+
+form {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 15px;
+    background: rgba(255,255,255,0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 30px;
+    color: #222;
+    box-shadow: 0px 4px 4px rgba(255, 0, 0, 1);
+}
+
+form input{
+    background: rgba(255,255,255,0.5);
+    border: none;
+    font-size: 30px;
+}
+
+form select{
+    background: rgba(255,255,255,0.5);
+    border: none;
+    font-size: 30px;
+}
+
+form textarea{
+    background: rgba(255,255,255,0.5);
+    border: none;
+    font-size: 30px;
+}
+
+.button_area{
+    display: flex;
+    flex-direction: row;
+    padding-top:20px;
+    gap: 600px;
+}
+
+.add-button{
+    font-size: 25px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius:25px;
+    width: 200px;
+    height: 50px;
+}
+
+input [type="file"]{
+    background: red;
+}
+
+.add-button:hover{
+    color: red;
+    border: 2px solid red;
+}

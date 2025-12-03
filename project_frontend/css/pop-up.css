@@ -80,6 +80,7 @@ input[type="range"] {
     border-radius: 5px;
     background: #ddd;
     outline: none;
+    pointer-events: none;
 }
 
 input[type="range"]::-webkit-slider-thumb {

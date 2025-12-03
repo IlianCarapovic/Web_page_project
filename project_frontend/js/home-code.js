@@ -21,7 +21,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const navbar = document.getElementById("navbar");
     const links = document.querySelectorAll(".nav-links a");
     const current = window.location.pathname.split("/").pop();
-    const logo = document.getElementById("logo");
 
     window.addEventListener("scroll", () => {
         if (window.scrollY > 500) {
