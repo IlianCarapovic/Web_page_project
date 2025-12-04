@@ -1,10 +1,47 @@
+.backgroundDiv2 {
+    background-image: url("../images/background-div2.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.backgroundDiv2 p{
+    font-family: "Snell Roundhand" ,fantasy;
+    font-size: 70px;
+    font-weight: lighter;
+    padding-left: 50px;
+    padding-right: 74px;
+    word-spacing: 10px;
+}
+
+.introduction{
+    display: flex;
+    background-image: url("../images/niche-bg.jpg");
+    justify-content: center;
+    align-content: center;
+    height: 150px;
+    padding: 20px 20px 45px;
+}
+
+.introduction h1{
+    color: black;
+    font-weight: lighter;
+    font-size: 30px;
+    font-family: "Apple Chancery", cursive;
+    text-align: center;
+}
+
 .heading{
     display: flex;
     background-image: url("../images/heding-home1.jpg");
     justify-content: center;
     align-content: center;
-    margin-bottom: 30px;
- }
+}
 
 .heading h1{
     color: white;
@@ -32,7 +69,6 @@
 }
 
 .page-Design{
-    background-image: url("../images/products-home.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     flex: 1;
@@ -54,7 +90,7 @@
 }
 
 .product-card:last-child{
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .product-card img:hover{

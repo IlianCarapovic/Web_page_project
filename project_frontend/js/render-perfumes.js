@@ -35,5 +35,5 @@ export function renderPerfumes(perfumes, containerId) {
         container.appendChild(card);
     });
 
-    attachPopupListeners();
+    attachPopupListeners()
 }

@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    padding-top: 95px;
+    background-color: black;
 }
 
 .navbar {
@@ -11,17 +11,22 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(30,30,30);
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
     padding: 10px 20px;
     height: 95px;
     z-index: 1000;
     transition: background-color 0.3s ease;
 }
-
-.navbar.scrolled {
-    background-color: rgb(30,30,30);
+.navbar.scrolled{
+    background-color: rgb(30, 30, 30);
+    transition: background-color 0.6s ease;
 }
 
+.navbar.scrolled .drop-down {
+    background-color: rgb(30, 30, 30);
+    transition: background-color 0.6s ease;
+}
 .logo {
     color: white;
     font-weight: bolder;
@@ -46,9 +51,9 @@ body {
     color: white;
     font-size: 30px;
     text-decoration: none;
+    font-weight: bolder;
     padding: 40px 40px;
     align-items: center;
-    font-weight: bolder;
     height: 100%;
 }
 
@@ -66,12 +71,14 @@ body {
     border-bottom: 3px solid red;
 }
 
+/* hide dropdown by default */
 .drop-down {
     display: none;
     position: absolute;
     list-style: none;
     padding: 10px 0;
-    background-color: rgb(30,30,30);
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
     text-align: center;
 }
 
@@ -92,4 +99,13 @@ body {
 .drop-down li a:hover {
     background-color: rgba(255, 255, 255, 0.2);
     color: red;
+}
+
+.imageSliderDiv{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    min-height: 1100px;
+    transition: background-image 2s ease-in;
 }
