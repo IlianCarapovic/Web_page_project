@@ -18,7 +18,7 @@ body {
     flex-direction: row;
     width: 100%;
     margin: 0;
-    background-image: url("../images/change.jpeg");
+    background-image: url("../images/background-images/change.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 600px;

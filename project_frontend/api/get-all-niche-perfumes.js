@@ -1,4 +1,4 @@
 export async function getAllNichePerfumes(){
-    const res = await fetch("http://localhost:3000/perfumes/perfumes/niche")
+    const res = await fetch("http://localhost:3000/perfumes/niche")
     return res.json();
 }

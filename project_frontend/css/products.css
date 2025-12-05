@@ -11,7 +11,7 @@ body {
 }
 
 .page-Design{
-    background-image: url("../images/change.jpeg");
+    background-image: url("../images/background-images/change.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     flex: 1;
@@ -19,7 +19,7 @@ body {
 
 .heading{
     display: flex;
-    background-image: url("../images/background-div2.jpg");
+    background-image: url("../images/background-images/background-div2.jpg");
     justify-content: center;
     align-content: center;
 }
@@ -44,21 +44,6 @@ body {
     border: none;
     font-size: 25px;
     color: white;
-}
-
-.add-button{
-    font-size: 25px;
-    background-color: black;
-    color: white;
-    border: none;
-    border-radius:25px;
-    width: 400px;
-    height: 50px;
-}
-
-.add-button:hover{
-    color: red;
-    border: 2px solid red;
 }
 
 .page-layout{

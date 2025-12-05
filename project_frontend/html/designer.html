@@ -2,9 +2,125 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/nav-bar-2.css">
+    <link rel="stylesheet" href="../css/niche-page.css">
+    <link rel="stylesheet" href="../css/pop-up.css">
+    <link rel="stylesheet" href="../css/button.css">
+
+    <title>Designer</title>
 </head>
 <body>
+<div class="imageSliderDiv" id ="homeDiv1">
+    <nav class="navbar" id ="navbar">
+        <div class="logo" id ="logo">
+            <p>Perfumer's Paradise</p>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../home.html">Home</a></li>
+            <li class="dropdown">
+                <a href="niche.html">Niche</a>
+                <ul class="drop-down">
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="designer.html">Designer</a></li>
+                    <li><a href="arabian.html">Arabian</a></li>
+                </ul>
+            </li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+        </ul>
+    </nav>
+</div>
+<div class = "backgroundDiv2">
+    <p>
+        “Where rare ingredients meet quiet artistry, a fragrance becomes more than scent—it becomes identity.”
+    </p>
+</div>
 
+<div class="page-Design">
+    <div class = "introduction">
+        <h1>
+            Niche perfumes are crafted far from the mainstream—born from artistry, imagination, and rare ingredients. Each scent tells its own story, designed not for everyone, but for the few who seek character over convention. In a world of mass-made fragrances, niche perfumery invites you to explore the uncommon, the evocative, and the deeply personal.
+        </h1>
+    </div>
+    <div class = "heading">
+        <h1>Perfumer’s Paradise Niche selection</h1>
+    </div>
+    <div class ="page-layout" id = "products-container">
+    </div>
+</div>
+<div class ="modal" id = "modal">
+    <div class ="inner-modal">
+        <div class="modal-left">
+            <img id="modal-img" style="width:400px;">
+        </div>
+        <div class="modal-right">
+            <h2 id="modal-title"></h2>
+            <div class="modal-rating">
+                <div class="rating-row">
+                    <label for="sillage-slider">Sillage:</label>
+                    <input type="range" id="sillage-slider" min="0" max="4" value="1">
+                    <span id="sillage-value">5</span>
+                </div>
+                <div class="rating-row">
+                    <label for="longevity-slider">Longevity:</label>
+                    <input type="range" id="longevity-slider" min="0" max="5" value="1">
+                    <span id="longevity-value">5</span>
+                </div>
+            </div>
+            <p id="modal-desc"></p>
+            <table id="modal-notes-table" class="notes-table">
+                <tr>
+                    <th>Top Notes</th>
+                    <td id="top-notes"></td>
+                </tr>
+                <tr>
+                    <th>Middle Notes</th>
+                    <td id="middle-notes"></td>
+                </tr>
+                <tr>
+                    <th>Base Notes</th>
+                    <td id="base-notes"></td>
+                </tr>
+            </table>
+            <div class="button-wrapper">
+                <button class="add-button" id="close">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-contact">
+            <h3>Contact</h3>
+            <p><strong>Name:</strong> Ilian Čarapović</p>
+            <p><strong>Address:</strong> Jadranska Ulica 45, 35000 Slavonski Brod</p>
+            <p><strong>Phone:</strong> 099 570 0714</p>
+            <p><strong>Email:</strong> <a href="mailto:iliancarapovic@gmail.com">iliancarapovic@gmail.com</a></p>
+        </div>
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contacts.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-social">
+            <h3>Follow Me</h3>
+            <a href="#"><img src="../images/background-images/facebook.svg" alt="Facebook" height="100" width="100" /></a>
+            <a href="#"><img src="../images/background-images/instagram.svg" alt="Instagram" height="100" width="100"/></a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2025 Ilian Čarapović. All rights reserved.</p>
+    </div>
+</footer>
+<script src = "../js/pop-ups.js"></script>
+<script src="../js/designer-page-code.js"></script>
+<script src="../js/image-slide-show.js"></script>
+<script src ="../js/nav-bar-changer.js"></script>
+<script type = "module" src = "../js/load-products-code/home-page-products-load.js"></script>
 </body>
 </html>

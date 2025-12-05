@@ -1,6 +1,6 @@
 .heading{
     display: flex;
-    background-image: url("../images/heding-home1.jpg");
+    background-image: url("../images/background-images/heding-home1.jpg");
     justify-content: center;
     align-content: center;
     margin-bottom: 30px;
@@ -16,23 +16,8 @@
     padding-bottom: 16px;
 }
 
-.add-button{
-    font-size: 25px;
-    background-color: black;
-    color: white;
-    border: none;
-    border-radius:25px;
-    width: 400px;
-    height: 50px;
-}
-
-.add-button:hover{
-    color: red;
-    border: 2px solid red;
-}
-
 .page-Design{
-    background-image: url("../images/products-home.jpg");
+    background-image: url("../images/background-images/products-home.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     flex: 1;
@@ -43,7 +28,7 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 40px 20px 20px 40px;
-    background-image: url("../images/products-home.jpg");
+    background-image: url("../images/background-images/products-home.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }

@@ -1,5 +1,5 @@
-import {getAllPerfumes} from "../api/get-all-perfumes.js";
-import {renderPerfumes} from "./render-perfumes.js";
+import {getAllPerfumes} from "../../api/get-all-perfumes.js";
+import {renderPerfumes} from "../render-perfumes.js";
 
 document.addEventListener("DOMContentLoaded",loadAll);
 

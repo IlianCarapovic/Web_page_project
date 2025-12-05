@@ -1,4 +1,3 @@
-//Background switcher
 document.addEventListener("DOMContentLoaded", () =>{
     let images = [
         "../images/niche-images/niche1.webp",

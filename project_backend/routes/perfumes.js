@@ -13,7 +13,7 @@ router.get('/', async (req, res) => {
     }
 });
 
-router.get('/perfumes/niche', async (req, res) => {
+router.get('/niche', async (req, res) => {
     try {
         const result = await pool.query("SELECT * FROM perfume WHERE type = 'niche'");
         res.json(result.rows);
@@ -23,5 +23,13 @@ router.get('/perfumes/niche', async (req, res) => {
     }
 });
 
-
+router.get('/designer', async (req, res) => {
+    try {
+        const result = await pool.query("SELECT * FROM perfume WHERE type = 'designer'");
+        res.json(result.rows);
+    } catch (err) {
+        console.error(err);
+        res.status(500).send("Server Error");
+    }
+});
 export default router;

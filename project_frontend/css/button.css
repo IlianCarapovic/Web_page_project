@@ -1,0 +1,14 @@
+.add-button{
+    font-size: 25px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius:25px;
+    width: 400px;
+    height: 50px;
+}
+
+.add-button:hover{
+    color: red;
+    border: 2px solid red;
+}

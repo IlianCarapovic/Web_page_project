@@ -1,5 +1,5 @@
 .backgroundDiv2 {
-    background-image: url("../images/background-div2.jpg");
+    background-image: url("../images/background-images/background-div2.jpg");
     background-size: cover;
     background-position: center;
     min-height: 200px;
@@ -21,7 +21,7 @@
 
 .backgroundDiv3{
     min-height: 630px;
-    background-image: url("../images/change.jpeg");
+    background-image: url("../images/background-images/change.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
 }
