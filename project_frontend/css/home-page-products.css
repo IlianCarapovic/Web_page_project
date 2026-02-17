@@ -3,7 +3,6 @@
     background-image: url("../images/background-images/heding-home1.jpg");
     justify-content: center;
     align-content: center;
-    margin-bottom: 30px;
  }
 
 .heading h1{
@@ -14,47 +13,4 @@
     word-spacing: 10px;
     height: 70px;
     padding-bottom: 16px;
-}
-
-.page-Design{
-    background-image: url("../images/background-images/products-home.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    flex: 1;
-}
-
-.page-layout{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 40px 20px 20px 40px;
-    background-image: url("../images/background-images/products-home.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.product-card {
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.product-card:last-child{
-    margin-bottom: 50px;
-}
-
-.product-card img:hover{
-    box-shadow: 0px 4px 10px rgba(255, 0, 0, 1);
-}
-
-.product-card button {
-    display: inline-block;
-    padding: 0;
-    border: none;
-    background: none;
-    width: auto;
-}
-
-.product-card img {
-    width: 350px;
-    height: auto;
 }

@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding-top: 95px;
+    background-color: black;
 }
 
 .navbar {
@@ -15,11 +16,6 @@ body {
     padding: 10px 20px;
     height: 95px;
     z-index: 1000;
-    transition: background-color 0.3s ease;
-}
-
-.navbar.scrolled {
-    background-color: rgb(30,30,30);
 }
 
 .logo {
@@ -55,7 +51,6 @@ body {
 .nav-links a:hover {
     background-color: rgba(255, 255, 255, 0.2);
     transition: background-color 0.3s ease-in;
-    color: red;
     height: auto;
 }
 
@@ -78,7 +73,7 @@ body {
 .dropdown:hover .drop-down {
     margin-top: 40px;
     display: block;
-    width: 192px;
+    width: 196px;
 }
 
 .drop-down li a {

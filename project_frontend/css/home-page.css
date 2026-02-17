@@ -1,3 +1,26 @@
+.drop-down li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+
+.dropdown:hover .drop-down {
+    margin-top: 40px;
+    display: block;
+    width: 196px;
+}
+
+.imageSliderDiv{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    min-height: 1100px;
+    transition: background-image 2s ease-in;
+}
+
 .backgroundDiv2 {
     background-image: url("../images/background-images/background-div2.jpg");
     background-size: cover;
@@ -59,4 +82,3 @@ main article p{
 main article aside{
     padding-right: 80px;
 }
-

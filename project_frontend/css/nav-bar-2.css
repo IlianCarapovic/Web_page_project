@@ -71,7 +71,6 @@ body {
     border-bottom: 3px solid red;
 }
 
-/* hide dropdown by default */
 .drop-down {
     display: none;
     position: absolute;
@@ -82,30 +81,7 @@ body {
     text-align: center;
 }
 
-.dropdown:hover .drop-down {
-    margin-top: 40px;
-    display: block;
-    width: 192px;
-}
-
-.drop-down li a {
-    display: block;
-    padding: 10px 20px;
-    text-decoration: none;
-    color: white;
-    font-size: 30px;
-}
-
 .drop-down li a:hover {
     background-color: rgba(255, 255, 255, 0.2);
     color: red;
-}
-
-.imageSliderDiv{
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    min-height: 1100px;
-    transition: background-image 2s ease-in;
 }
