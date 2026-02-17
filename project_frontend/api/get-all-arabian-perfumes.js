@@ -1,4 +1,4 @@
 export async function getAllArabianPerfumes(){
-    const res = await fetch("http://localhost:3000/perfumes/arabian")
+    const res = await fetch("  ")
     return res.json();
 }
